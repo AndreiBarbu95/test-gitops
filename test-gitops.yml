@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: test-gitops
+  name: test-gitops
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test-gitops
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: test-gitops
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
