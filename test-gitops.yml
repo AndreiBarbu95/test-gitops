@@ -4,7 +4,7 @@ metadata:
   labels:
     app: test-gitops
   name: test-gitops
-  namespace: test-gitops-ns
+  namespace: gitops-ns
 spec:
   replicas: 1
   selector:
